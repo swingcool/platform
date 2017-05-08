@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-	<typeAliases>
+	<!-- <typeAliases>
 		<typeAlias alias="UserAlias"
 			type="net.sunniwell.camera.mybatis.model.Operator" />
 	</typeAliases>
@@ -21,6 +21,10 @@
 
 	<mappers>
 		<mapper resource="net/sunniwell/camera/mybatis/model/Operator.xml" />
-	</mappers>
+	</mappers> -->
+		<!-- 批量别名的设置 -->
+	<typeAliases>
+		<package name="net.sunniwell.camera.model"/>
+	</typeAliases>
 	
 </configuration>

@@ -95,6 +95,11 @@
 			<artifactId>spring-expression</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
 
 		<!-- 数据库相关 -->
 		<dependency>
@@ -179,7 +184,18 @@
 			<version>${springframework.version}</version>
 			<scope>test</scope>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-all</artifactId>
+			<version>5.14.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.28</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

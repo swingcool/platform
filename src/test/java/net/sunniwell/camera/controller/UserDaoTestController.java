@@ -5,7 +5,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import net.sunniwell.camera.model.User;
-import net.sunniwell.camera.repository.UserDao;
+import net.sunniwell.camera.mongo.UserDao;
 
 import org.apache.log4j.Logger;
 import org.junit.Ignore;
@@ -25,7 +25,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * 注解@ContextConfiguration表示将ApplicationContext对象注入进来，就不用像以往那样在测试程序里先new了，直接使用
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:spring-context.xml", "classpath:springmvc-servlet.xml" })
+@ContextConfiguration(locations = { "classpath:/spring/spring-context.xml", "classpath:/spring/springmvc-servlet.xml" })
 public class UserDaoTestController {
 
 	// 在任何需要记录日志的类中
