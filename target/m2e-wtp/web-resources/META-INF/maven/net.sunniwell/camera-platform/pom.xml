@@ -10,7 +10,7 @@
 
 	<!-- 设置全局属性 -->
 	<properties>
-		<springframework.version>4.3.2.RELEASE</springframework.version>
+		<springframework.version>5.2.20.RELEASE</springframework.version>
 		<aspectj.version>1.8.9</aspectj.version>
 		<cglib.version>3.2.4</cglib.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
